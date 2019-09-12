@@ -1,0 +1,12 @@
+$fontsizeDani: 130px;
+
+body {
+  
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: lighten(#cc0000, 30);
+  font-size: ($fontsizeDani + 30);
+}
+
+a {
+  color: #00B7FF;
+}
