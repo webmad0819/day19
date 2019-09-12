@@ -1,0 +1,33 @@
+{{host}}
+
+
+
+
+
+
+
+
+{{oneMovie.title}}
+{{oneMovie.year}}
+{{oneMovie.director}}
+{{oneMovie.duration}}
+<button id="movie-genres-button">Hide/Show</button>
+<ul id="movie-genres">
+    {{#each oneMovie.genre}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<script>
+    var counter = 0;
+    
+    document.querySelector("#movie-genres-button").onclick = function () {
+        (counter++ % 2  === 0) 
+        ?
+        document.querySelector("#movie-genres").style.display = "none"
+        :
+        document.querySelector("#movie-genres").style.display = "block"
+
+    }
+
+</script>
